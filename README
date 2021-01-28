@@ -1,0 +1,14 @@
+Dear User,
+
+I am pleased to have you try the early version of my PowerPoint Slide Creator in C#.
+Just a word of warning: this project works right now, but its really stingy about keywords so keep it simple stupid.
+For example beans + brew will return a plethora of pleasant coffee images, but for things like the RUSH song Fly by Night will basically return nothing
+and will cause the program to crash. This program only returns images from free-images.com due to the complexity of modern websites. Sorry no Google Images for now.
+No fancy schmancy 3rd party APIs were used for this project. Only official Microsoft APIs were used for this project. Thank you for downloading and please leave behind
+some helpful comments.
+
+The best thing for now would be to implement some feedback for the program to see if it brought back anything at all.
+ToDo:
+1. More User Feedback
+2. Exception/Error Handling
+3. Better Image Search Engine?
