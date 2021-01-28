@@ -5,7 +5,7 @@ For example beans + brew will return a plethora of pleasant coffee images. This 
 No 3rd party APIs were used for this project. Only official Microsoft APIs. Thank you for downloading and please leave behind
 some helpful comments.
 
-To Run, extract the "PowerSlider.zip" folder and run "PowerSlider.exe"
+To Run, extract the "PowerSlider.Install.zip" folder and run "PowerSlider.exe"
 
 Future Improvements:
 1. Interactive Feedback
