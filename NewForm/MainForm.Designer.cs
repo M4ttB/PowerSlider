@@ -41,6 +41,7 @@ namespace NewForm
             this.setImage_btn = new System.Windows.Forms.Button();
             this.pictureLabel = new System.Windows.Forms.Label();
             this.bold_btn = new System.Windows.Forms.Button();
+            this.resetBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,17 +151,28 @@ namespace NewForm
             // 
             this.bold_btn.Location = new System.Drawing.Point(74, 135);
             this.bold_btn.Name = "bold_btn";
-            this.bold_btn.Size = new System.Drawing.Size(227, 23);
+            this.bold_btn.Size = new System.Drawing.Size(115, 23);
             this.bold_btn.TabIndex = 11;
             this.bold_btn.Text = "Bold Keyword";
             this.bold_btn.UseVisualStyleBackColor = true;
             this.bold_btn.Click += new System.EventHandler(this.bold_btn_Click);
             // 
-            // mainForm
+            // resetBtn
+            // 
+            this.resetBtn.Location = new System.Drawing.Point(195, 135);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(106, 23);
+            this.resetBtn.TabIndex = 12;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 206);
+            this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.bold_btn);
             this.Controls.Add(this.pictureLabel);
             this.Controls.Add(this.setImage_btn);
@@ -173,7 +185,7 @@ namespace NewForm
             this.Controls.Add(this.label1);
             this.Controls.Add(this.contentBox);
             this.Controls.Add(this.titleBox);
-            this.Name = "mainForm";
+            this.Name = "MainForm";
             this.Text = "PowerSlider";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -195,6 +207,7 @@ namespace NewForm
         private System.Windows.Forms.Button setImage_btn;
         private System.Windows.Forms.Label pictureLabel;
         private System.Windows.Forms.Button bold_btn;
+        private System.Windows.Forms.Button resetBtn;
     }
 }
 

@@ -119,7 +119,6 @@ namespace NewForm
             Directory.Delete(subDir);
         }
 
-
         private void searchImages_btn_Click(object sender, EventArgs e)
         {
             //get user input and parse string
@@ -154,10 +153,17 @@ namespace NewForm
             indexMax = (urlList.Count > 0 ? urlList.Count - 1 : 0);
             
             //stream image to pictureBox1
-            byte[] image = GetImage(urls[0]);
-            using (var ms = new MemoryStream(image))
+            try
             {
-                pictureBox1.Image = Image.FromStream(ms);
+                byte[] image = GetImage(urls[0]);
+                using (var ms = new MemoryStream(image))
+                {
+                    pictureBox1.Image = Image.FromStream(ms);
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("No image found.");
             }
         }
 
@@ -264,6 +270,20 @@ namespace NewForm
         {
             contentBox.SelectionFont = new Font("Segoe UI", 9, FontStyle.Bold);
             keywordList.Add(contentBox.SelectedText); //A bolded word is added as a keyword to the list
+        }
+
+        //reset global variables and clear the textboxes and the picturebox
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            keywordList.Clear();
+            urlList.Clear();
+            presentationImages.Clear();
+            index = 0;
+            indexMax = 0;
+
+            titleBox.Text = "";
+            contentBox.Text = "";
+            pictureBox1.Image = null;
         }
     }
 }

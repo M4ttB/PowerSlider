@@ -9,6 +9,7 @@
     <Authors>Matthew Bunch</Authors>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
