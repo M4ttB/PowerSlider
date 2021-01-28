@@ -7,6 +7,8 @@ and will cause the program to crash. This program only returns images from free-
 No fancy schmancy 3rd party APIs were used for this project. Only official Microsoft APIs were used for this project. Thank you for downloading and please leave behind
 some helpful comments.
 
+Oh and I recommend using the .zip folder and .exe file found within for now. Easier to setup instead of installing all files and VS.
+
 The best thing for now would be to implement some feedback for the program to see if it brought back anything at all.
 ToDo:
 1. More User Feedback
